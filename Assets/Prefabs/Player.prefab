@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 4567712115482393246}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0, y: 1.612, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78,8 +78,8 @@ PositionConstraint:
   m_Enabled: 1
   serializedVersion: 2
   m_Weight: 1
-  m_TranslationAtRest: {x: 0, y: 1.05, z: 0}
-  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_TranslationAtRest: {x: 0, y: 1.612, z: 0}
+  m_TranslationOffset: {x: 0, y: 0.53199995, z: 0}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 3454864043528036304}
   - component: {fileID: 4586825847621664813}
   - component: {fileID: 5834816914213881409}
+  - component: {fileID: 5868193876984292136}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -287,7 +288,7 @@ Transform:
   m_GameObject: {fileID: 8464210027258793226}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0, y: 1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -332,4 +333,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  airMoveSpeed: 0.4
   rotationSpeed: 100
+  gravity: -0.02
+--- !u!114 &5868193876984292136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464210027258793226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 524b8b3af2f41cb4aa34b65e4574d6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayOrigin: {fileID: 3493291226175531210}
+  rayMask:
+    serializedVersion: 2
+    m_Bits: 64
