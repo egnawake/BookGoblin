@@ -5,11 +5,6 @@ public class PauseManager : MonoBehaviour
 {
     private bool paused;
 
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
     private void Update()
     {
         if (Input.GetButtonDown("Cancel"))
