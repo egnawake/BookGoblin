@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1284270694716476648}
+  - component: {fileID: 6860586598285383418}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -33,6 +34,18 @@ Transform:
   - {fileID: 4938486827606137732}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6860586598285383418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797310384021646870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c0c730607e0234abc9288d326ec956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4567712115482393246
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d719760e5da1d84d961dc82e64562c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 100
+  sensitivity: 300
   minAngle: -40
   maxAngle: 60
 --- !u!1 &6421983573270487590
@@ -316,7 +329,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
@@ -334,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   airMoveSpeed: 0.4
-  rotationSpeed: 100
+  rotationSpeed: 300
   gravity: -0.02
 --- !u!114 &5868193876984292136
 MonoBehaviour:
@@ -352,3 +365,4 @@ MonoBehaviour:
   rayMask:
     serializedVersion: 2
     m_Bits: 64
+  interactDistance: 2.5
