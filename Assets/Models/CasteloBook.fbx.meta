@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 87e3d80d813fba54fa94eb7957483406
+guid: b3c1895fcee17c449a7960a0d33f6a3f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BlueBook
-    second: {fileID: 2100000, guid: 2d775afd03b0ce44ea1ed14877a96c97, type: 2}
+    second: {fileID: 2100000, guid: 6298ac36625a5cd41a3d91e3cd7cd6f1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BlueBookPaper
-    second: {fileID: 2100000, guid: 2d775afd03b0ce44ea1ed14877a96c97, type: 2}
+    second: {fileID: 2100000, guid: 6298ac36625a5cd41a3d91e3cd7cd6f1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
