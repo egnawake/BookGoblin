@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Slot : Interactable
@@ -50,6 +51,8 @@ public class Slot : Interactable
         book.enabled = false;
 
         Contained = book;
+
+        OnPlace?.Invoke();
     }
 
     public Book Take()
@@ -66,4 +69,6 @@ public class Slot : Interactable
 
         return ret;
     }
+
+    public event Action OnPlace;
 }
