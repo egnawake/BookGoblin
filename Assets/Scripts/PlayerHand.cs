@@ -19,6 +19,12 @@ public class PlayerHand : MonoBehaviour
 
         interactable.enabled = false;
 
+        Holdable h = interactable.GetComponent<Holdable>();
+        if (h != null)
+        {
+            h.Hold();
+        }
+
         Held = interactable;
     }
 
@@ -27,6 +33,12 @@ public class PlayerHand : MonoBehaviour
         if (Held == null)
         {
             return null;
+        }
+
+        Holdable h = Held.GetComponent<Holdable>();
+        if (h != null)
+        {
+            h.Drop();
         }
 
         Interactable ret = Held;

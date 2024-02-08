@@ -89,6 +89,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3777420695243138614}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4084045550417091431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b3c1895fcee17c449a7960a0d33f6a3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3777420695243138614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3944280860975497981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -157,6 +163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CasteloBook
       objectReference: {fileID: 0}
+    - target: {fileID: 6433655721159876842, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
+        type: 3}
+      propertyPath: renderRoot
+      value: 
+      objectReference: {fileID: 4084045550417091431}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5997531885155749115, guid: fae8323a9d4bda4458a7b3274fa1ab9a, type: 3}

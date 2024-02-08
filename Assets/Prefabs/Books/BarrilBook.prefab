@@ -83,6 +83,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec6be6ee7a9ae4489ad98fcf5af9627, type: 3}
+--- !u!1 &2575657817201545922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ec6be6ee7a9ae4489ad98fcf5af9627,
+    type: 3}
+  m_PrefabInstance: {fileID: 3422730161484509075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2951339416363321464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5ec6be6ee7a9ae4489ad98fcf5af9627,
@@ -157,6 +163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarrilBook
       objectReference: {fileID: 0}
+    - target: {fileID: 6433655721159876842, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
+        type: 3}
+      propertyPath: renderRoot
+      value: 
+      objectReference: {fileID: 2575657817201545922}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5997531885155749115, guid: fae8323a9d4bda4458a7b3274fa1ab9a, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 710232687578171448}
   - component: {fileID: 3429255057698222519}
   - component: {fileID: 386762049576542355}
+  - component: {fileID: 6433655721159876842}
   m_Layer: 6
   m_Name: GinjinhaBook
   m_TagString: Untagged
@@ -69,6 +70,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Library>k__BackingField: 0
   <Position>k__BackingField: 0
+--- !u!114 &6433655721159876842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959018925935141864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c5191aa656ee847bc1f2393fd57911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderRoot: {fileID: 5997531885155749115}
 --- !u!1001 &6916098188340670890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152,6 +166,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87e3d80d813fba54fa94eb7957483406, type: 3}
+--- !u!1 &5997531885155749115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87e3d80d813fba54fa94eb7957483406,
+    type: 3}
+  m_PrefabInstance: {fileID: 6916098188340670890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6372685650201269825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87e3d80d813fba54fa94eb7957483406,
