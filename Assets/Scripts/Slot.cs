@@ -4,6 +4,7 @@ using UnityEngine;
 public class Slot : Interactable
 {
     [SerializeField] private Transform pivot;
+    [SerializeField] private Book book;
 
     public Book Contained { get; private set; }
 
@@ -68,6 +69,15 @@ public class Slot : Interactable
         Contained = null;
 
         return ret;
+    }
+
+    private void Start()
+    {
+        if (book != null)
+        {
+            Book bookInstance = Instantiate(book);
+            Place(bookInstance);
+        }
     }
 
     public event Action OnPlace;

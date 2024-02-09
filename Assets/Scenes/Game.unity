@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CasteloBook
       objectReference: {fileID: 0}
+    - target: {fileID: 3284025585758675221, guid: 33553bb5ab8963048ae237065974c78c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4568803236733438661, guid: 33553bb5ab8963048ae237065974c78c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1459,6 +1464,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6115777898748958849, guid: 25ead64455606714da732998fad18fb9,
+        type: 3}
+      propertyPath: book
+      value: 
+      objectReference: {fileID: 3738806291843097198, guid: 33553bb5ab8963048ae237065974c78c,
+        type: 3}
     - target: {fileID: 8993321469063390859, guid: 25ead64455606714da732998fad18fb9,
         type: 3}
       propertyPath: m_Name

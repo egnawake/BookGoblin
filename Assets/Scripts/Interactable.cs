@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -29,7 +30,7 @@ public abstract class Interactable : MonoBehaviour
         return renderer.material;
     }
 
-    private void Start()
+    private void Awake()
     {
         material = GetHighlightMaterial();
 
