@@ -8,8 +8,14 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private float interactDistance = 2.5f;
     [SerializeField] private PlayerHand hand;
     [SerializeField] private Transform world;
+    private PlayerSounds playerSounds;
 
     private Interactable focused;
+
+    private void Start()
+    {
+        playerSounds = GetComponent<PlayerSounds>();
+    }
 
     private void Update()
     {
@@ -60,6 +66,7 @@ public class PlayerInteractor : MonoBehaviour
         if (interactable is Book book)
         {
             hand.Hold(book);
+            playerSounds.PlayBookPickUpSound();
         }
         else if (interactable is Slot slot)
         {
@@ -69,11 +76,13 @@ public class PlayerInteractor : MonoBehaviour
             if (bookInHand != null)
             {
                 slot.Place(bookInHand);
+                playerSounds.PlayBookPlaceSound();
             }
 
             if (bookInSlot != null)
             {
                 hand.Hold(bookInSlot);
+                playerSounds.PlayBookPickUpSound();
             }
         }
 
@@ -87,6 +96,7 @@ public class PlayerInteractor : MonoBehaviour
         Transform itemTransform = item.gameObject.transform;
         itemTransform.SetParent(world.transform);
         itemTransform.position = FindDropPosition();
+        playerSounds.PlayBookDropSound();
     }
 
     private Vector3 FindDropPosition()
