@@ -54,7 +54,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3443202, y: 0.52973247, z: 0.15069832}
+  m_Size: {x: 0.25535744, y: 0.39670572, z: 0.099475205}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &386762049576542355
 MonoBehaviour:
@@ -82,7 +82,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c5191aa656ee847bc1f2393fd57911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderRoot: {fileID: 5997531885155749115}
 --- !u!1001 &6916098188340670890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,12 +108,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 87e3d80d813fba54fa94eb7957483406,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.095
+      value: -0.066
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 87e3d80d813fba54fa94eb7957483406,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 87e3d80d813fba54fa94eb7957483406,
         type: 3}
@@ -166,12 +165,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87e3d80d813fba54fa94eb7957483406, type: 3}
---- !u!1 &5997531885155749115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87e3d80d813fba54fa94eb7957483406,
-    type: 3}
-  m_PrefabInstance: {fileID: 6916098188340670890}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6372685650201269825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87e3d80d813fba54fa94eb7957483406,
