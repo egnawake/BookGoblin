@@ -3,7 +3,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
-    [SerializeField] private float airMoveSpeed = 0.4f;
     [SerializeField] private float rotationSpeed = 1f;
     [SerializeField] private float gravity = -9.8f;
 
@@ -52,7 +51,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            newVelocity = transform.rotation * input * airMoveSpeed * Time.deltaTime;
+            newVelocity = transform.rotation * input * moveSpeed * Time.deltaTime;
             newVelocity += Vector3.up * (velocity.y + gravity * Time.deltaTime);
         }
 
