@@ -6,6 +6,8 @@ public class Slot : Interactable
     [SerializeField] private Transform pivot;
     [SerializeField] private Book book;
 
+    private new Renderer renderer;
+
     public Book Contained { get; private set; }
 
     public override void Activate()
@@ -49,6 +51,8 @@ public class Slot : Interactable
         t.SetParent(pivot.transform);
         t.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
 
+        renderer.enabled = false;
+
         book.enabled = false;
 
         Contained = book;
@@ -64,6 +68,7 @@ public class Slot : Interactable
         }
 
         Contained.Unfocus();
+        renderer.enabled = true;
 
         Book ret = Contained;
         Contained = null;
@@ -73,6 +78,8 @@ public class Slot : Interactable
 
     private void Start()
     {
+        renderer = GetComponentInChildren<Renderer>();
+
         if (book != null)
         {
             Book bookInstance = Instantiate(book);
