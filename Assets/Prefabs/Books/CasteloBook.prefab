@@ -1,105 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3777420695243138614
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4568803236733438661}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.066
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_Name
-      value: CasteloBook
-      objectReference: {fileID: 0}
-    - target: {fileID: 4253280567622488715, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3341c73c976528c4399d3c379db09b2a, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b3c1895fcee17c449a7960a0d33f6a3f, type: 3}
---- !u!4 &3739854002948424157 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3777420695243138614}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4084045550417091431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b3c1895fcee17c449a7960a0d33f6a3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3777420695243138614}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3944280860975497981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,24 +68,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: CasteloBook
       objectReference: {fileID: 0}
-    - target: {fileID: 6433655721159876842, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
+    - target: {fileID: 6590170517425204555, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
         type: 3}
-      propertyPath: renderRoot
+      propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4084045550417091431}
+      objectReference: {fileID: 2100000, guid: 6298ac36625a5cd41a3d91e3cd7cd6f1, type: 2}
+    - target: {fileID: 6590170517425204555, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3341c73c976528c4399d3c379db09b2a, type: 2}
+    - target: {fileID: 6590170517425204555, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6298ac36625a5cd41a3d91e3cd7cd6f1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5997531885155749115, guid: fae8323a9d4bda4458a7b3274fa1ab9a, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 710232687578171448, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3739854002948424157}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae8323a9d4bda4458a7b3274fa1ab9a, type: 3}
---- !u!4 &4568803236733438661 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 710232687578171448, guid: fae8323a9d4bda4458a7b3274fa1ab9a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3944280860975497981}
-  m_PrefabAsset: {fileID: 0}
