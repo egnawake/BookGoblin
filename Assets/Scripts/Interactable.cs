@@ -6,15 +6,34 @@ public abstract class Interactable : MonoBehaviour
 {
     private Material material;
     private LocalKeyword emissionKeyword;
+    private Collider trigger;
 
     public virtual void Focus()
     {
-        material.EnableKeyword(emissionKeyword);
+        if (emissionKeyword.isValid)
+        {
+            material.EnableKeyword(emissionKeyword);
+        }
+        else
+        {
+            Color c = material.GetColor("_BaseColor");
+            c.a = 0.15f;
+            material.SetColor("_BaseColor", c);
+        }
     }
 
     public virtual void Unfocus()
     {
-        material.DisableKeyword(emissionKeyword);
+        if (emissionKeyword.isValid)
+        {
+            material.DisableKeyword(emissionKeyword);
+        }
+        else
+        {
+            Color c = material.GetColor("_BaseColor");
+            c.a = 0.07f;
+            material.SetColor("_BaseColor", c);
+        }
     }
 
     public abstract void Activate();
@@ -34,8 +53,24 @@ public abstract class Interactable : MonoBehaviour
     {
         material = GetHighlightMaterial();
 
-        emissionKeyword = new LocalKeyword(material.shader, "_EMISSION");
+        Shader shader = material.shader;
 
-        material.SetColor("_EmissionColor", new Color(0.1f, 0.1f, 0.1f));
+        emissionKeyword = shader.keywordSpace.FindKeyword("_EMISSION");
+        if (emissionKeyword.isValid)
+        {
+            material.SetColor("_EmissionColor", new Color(0.1f, 0.1f, 0.1f));
+        }
+
+        trigger = GetComponent<Collider>();
+    }
+
+    private void OnEnable()
+    {
+        trigger.enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        trigger.enabled = false;
     }
 }

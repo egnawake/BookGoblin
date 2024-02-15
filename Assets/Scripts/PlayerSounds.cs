@@ -27,12 +27,6 @@ public class PlayerSounds : MonoBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
-    void Update()
-    {
-        print(couroutineIsPlaying);
-        
-    }
-
     private void FixedUpdate()
     {
         if (couroutineIsPlaying == false && Input.GetAxis("Horizontal") != 0 && characterController.isGrounded ||
