@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,6 +11,22 @@ public class Library : MonoBehaviour
     [SerializeField] private AudioSource completeSound;
 
     private IList<Slot> slots;
+
+    public bool IsComplete()
+    {
+        int i = 0;
+        foreach (Slot s in slots)
+        {
+            if (!IsBookInRightSlot(s.Contained, i))
+            {
+                return false;
+            }
+
+            i += 1;
+        }
+
+        return true;
+    }
 
     private void Start()
     {
@@ -34,27 +51,15 @@ public class Library : MonoBehaviour
 
             Instantiate(starPrefab, starPosition);
             completeSound.Play();
+
+            OnComplete?.Invoke();
         }
-    }
-
-    private bool IsComplete()
-    {
-        int i = 0;
-        foreach (Slot s in slots)
-        {
-            if (!IsBookInRightSlot(s.Contained, i))
-            {
-                return false;
-            }
-
-            i += 1;
-        }
-
-        return true;
     }
 
     private bool IsBookInRightSlot(Book book, int slotIdx)
     {
         return book != null && book.Library == id && book.Position == slotIdx;
     }
+
+    public event Action OnComplete;
 }

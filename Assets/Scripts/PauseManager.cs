@@ -7,24 +7,28 @@ public class PauseManager : MonoBehaviour
 
     private bool paused;
 
+    public void Pause()
+    {
+        paused = !paused;
+
+        if (paused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            OnPause?.Invoke();
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            OnUnpause?.Invoke();
+        }
+    }
+
     private void Update()
     {
         if (Input.GetButtonDown("Cancel"))
         {
-            paused = !paused;
-
-            if (paused)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                pauseMenu.SetActive(true);
-                OnPause?.Invoke();
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                pauseMenu.SetActive(false);
-                OnUnpause?.Invoke();
-            }
+            Pause();
+            pauseMenu.SetActive(paused);
         }
     }
 

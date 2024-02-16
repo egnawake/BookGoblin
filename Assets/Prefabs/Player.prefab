@@ -386,7 +386,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -825,7 +825,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1.2
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.1
@@ -844,10 +844,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4cab8061af2c34ab3720a41166d68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  airMoveSpeed: 0.4
+  moveSpeed: 3
   rotationSpeed: 300
-  gravity: -0.02
+  gravity: -0.2
 --- !u!114 &5868193876984292136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -893,9 +892,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0a7127769f277f448892b45a2d6fc328, type: 3}
   - {fileID: 8300000, guid: 811894612e075f548bd359f97bbc9e97, type: 3}
   - {fileID: 8300000, guid: d20cf0d88bbd76f4885d8cac317e4185, type: 3}
-  pitchMinRange: 0.7
-  pitchMaxRange: 1.3
-  secondsBetweenFootsteps: 0.5
+  pitchMinRange: 0.85
+  pitchMaxRange: 1.15
+  secondsBetweenFootsteps: 0.25
   interactionSource: {fileID: 837190875903139622}
   BookPickUpSound: {fileID: 8300000, guid: bee49b352863ce74e88d8f5980323bda, type: 3}
   BookPlaceSound: {fileID: 8300000, guid: 0d91780a3956b944a89ac27c1bd2dd37, type: 3}
