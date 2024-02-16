@@ -5,6 +5,8 @@ using UnityEngine;
 public class Library : MonoBehaviour
 {
     [SerializeField] private int id;
+    [SerializeField] private GameObject starPrefab;
+    [SerializeField] private Transform starPosition;
 
     private IList<Slot> slots;
 
@@ -23,6 +25,13 @@ public class Library : MonoBehaviour
         if (IsComplete())
         {
             Debug.Log("Puzzle complete!");
+
+            foreach (Slot s in slots)
+            {
+                s.enabled = false;
+            }
+
+            Instantiate(starPrefab, starPosition);
         }
     }
 
