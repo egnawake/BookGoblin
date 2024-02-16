@@ -7,6 +7,7 @@ public class Library : MonoBehaviour
     [SerializeField] private int id;
     [SerializeField] private GameObject starPrefab;
     [SerializeField] private Transform starPosition;
+    [SerializeField] private AudioSource completeSound;
 
     private IList<Slot> slots;
 
@@ -32,6 +33,7 @@ public class Library : MonoBehaviour
             }
 
             Instantiate(starPrefab, starPosition);
+            completeSound.Play();
         }
     }
 
