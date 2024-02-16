@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 4172384040239143583}
   - component: {fileID: 139284103044755006}
   m_Layer: 5
-  m_Name: QuitText
+  m_Name: ControlsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,8 +226,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -33}
-  m_SizeDelta: {x: 400, y: 140}
+  m_AnchoredPosition: {x: 0, y: -75.3}
+  m_SizeDelta: {x: 400, y: 224.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4172384040239143583
 CanvasRenderer:
@@ -257,9 +257,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Esc to resume
+  m_text: 'Left-click to interact
 
-    Q to quit'
+    Right-click to drop
+
+    Esc to resume
+
+    Q
+    to quit'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a7b3ca7ee01a77043b504d0841a502dd, type: 2}
   m_sharedMaterial: {fileID: 2835122785045146990, guid: a7b3ca7ee01a77043b504d0841a502dd,
